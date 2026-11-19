@@ -1,0 +1,238 @@
+/* Configurações gerais da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f14;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #18181f;
+    padding: 20px 8%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    color: #9b5cff;
+    font-size: 28px;
+}
+
+.cabecalho p {
+    color: #b8b8c2;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Apresentação */
+.apresentacao {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(90deg, #0f0f14, #5b21b6);
+}
+.apresentacao h2 {
+    font-size: clamp(28px, 5vw, 48px);
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.apresentacao p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #b8b8c2;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #9b5cff;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Componentes */
+.componentes {
+    padding: 60px 8%;
+    background-color: #18181f;
+}
+
+.componentes h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #24242e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 30%;
+    border: 1px solid #9b5cff;
+
+    box-shadow: 0 4px 30px rgba(155, 92, 255, 0.5);
+
+}
+
+.card h3 {
+    color: #9b5cff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b8b8c2;
+}
+/* Área de participação */
+.participar {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.participar h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.participar > p {
+    color: #b8b8c2;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #24242e;
+    color: #ffffff;
+    border: 1px solid #b8b8c2;
+    border-radius: 8px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #9b5cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background-color: #18181f;
+    text-align: center;
+    padding: 25px;
+    color: #b8b8c2;
+}
+/* Efeitos de interação */
+nav a,
+.botao,
+.card,
+form button {
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no menu */
+nav a:hover {
+    color: #9b5cff;
+}
+
+/* Efeito no botão principal */
+.botao:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+}
+
+/* Efeito nos cards */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ffffff;
+}
+
+/* Efeito no botão do formulário */
+form button:hover {
+    background-color: #7c3aed;
+    transform: scale(1.02);
+}
+
+/* Efeito ao selecionar os campos */
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #9b5cff;
+    border-color: #9b5cff;
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .apresentacao {
+        padding: 60px 20px;
+    }
+
+    .apresentacao h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .participar {
+        padding: 50px 20px;
+    }
+}

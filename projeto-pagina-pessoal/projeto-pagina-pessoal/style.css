@@ -1,0 +1,251 @@
+/* Configurações gerais da página */
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nome fonseca.dev */
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 32px;
+}
+
+/* Links do menu */
+nav a {
+    color: #8ab4ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Efeito quando passa o mouse */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Espaço entre as seções */
+section {
+    margin-bottom: 50px;
+}
+
+/* Títulos das seções */
+h2 {
+    color: #8ab4ff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #8ab4ff;
+}
+
+
+/* Melhorando a aparência das seções */
+section {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Parágrafos */
+p {
+    font-size: 16px;
+}
+
+/* Foto principal e foto da academia */
+img {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #252525;
+    color: #8ab4ff;
+}
+
+/* Campos do formulário */
+input,
+textarea {
+    background-color: #252525;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Botão do formulário */
+button {
+    background-color: #8ab4ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+/* Ajuste do tamanho do conteúdo */
+main {
+    max-width: 1200px;
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* Melhorando o tamanho dos textos */
+body {
+    font-size: 17px;
+}
+
+/* Destaque do nome do site */
+header h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* Apresentação inicial */
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#inicio img {
+    width: 300px;
+}
+
+.apresentacao {
+    flex: 1;
+}
+
+.apresentacao h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Página de interesses */
+
+#jogos,
+#musculacao {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#jogos h2,
+#musculacao h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#jogos p,
+#musculacao p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#musculacao img {
+    width: 400px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+/* Seção de musculação */
+#musculacao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#musculacao img {
+    width: 300px;
+}
+
+.texto-musculacao {
+    flex: 1;
+}
+
+.texto-musculacao p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Seção de jogos */
+#jogos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#jogos video {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.texto-jogos {
+    flex: 1;
+}
+
+.texto-jogos h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.texto-jogos p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Links do menu */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #8ab4ff;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 7px 12px;
+    border: 1px solid #8ab4ff;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #8ab4ff;
+    color: #111;
+}

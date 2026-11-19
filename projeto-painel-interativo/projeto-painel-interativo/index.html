@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra seu caminho no Front-End</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="tema-escuro">
+
+  <header class="topo">
+    <div class="topo__barra">
+      <a href="#inicio" class="logo">&lt;Caminho/&gt;</a>
+      <nav class="menu" aria-label="Seções">
+        <a href="#painel">Painel</a>
+        <a href="#trilha">Trilha</a>
+        <a href="#ao-vivo">Ao vivo</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button type="button" id="btn-tema" class="botao botao--secundario" aria-pressed="true">Tema claro</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="container hero">
+      <div>
+        <p class="eyebrow">00 · Front-End para iniciantes</p>
+        <h1>Descubra seu <i>caminho</i> no Front-End.</h1>
+        <p class="sub">Informe seu nome, escolha uma área e receba uma orientação personalizada, com cursos gratuitos para começar hoje.</p>
+        <a href="#painel" class="botao botao--principal">Gerar minha orientação</a>
+        <p class="micro">Sem cadastro. Nada é enviado para servidor.</p>
+      </div>
+      <div class="terminal" aria-label="Exemplo de perguntas e respostas">
+        <div class="terminal__barra">ASK_FRONTEND.EXE</div>
+        <p class="terminal__linha"><span class="prompt">visitante@frontend ~ %</span> <span id="term-pergunta"></span></p>
+        <p class="terminal__resposta" id="term-resposta"></p>
+      </div>
+    </section>
+
+    <section id="painel" class="container secao">
+      <p class="eyebrow">01 · Painel interativo</p>
+      <h2>Qual área você quer explorar?</h2>
+      <div class="painel">
+        <div class="campos">
+          <div class="campo">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" placeholder="Ex.: Ana" autocomplete="given-name">
+          </div>
+          <div class="campo">
+            <label for="interesse">Área de interesse</label>
+            <select id="interesse">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="nivel">Seu nível</label>
+            <select id="nivel">
+              <option value="iniciante">Estou começando</option>
+              <option value="avancado">Já fiz alguns exercícios</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" id="btn-gerar" class="botao botao--principal">Gerar orientação</button>
+        <div id="resultado" class="resultado" role="status" aria-live="polite">Sua orientação aparecerá aqui.</div>
+        <div id="detalhes" class="detalhes" hidden>
+          <div><h3>Pratique esta semana</h3><ul id="tarefas"></ul></div>
+          <div><h3>Cursos e sites gratuitos</h3><ul id="cursos" class="cursos"></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trilha" class="container secao">
+      <p class="eyebrow">02 · A trilha</p>
+      <h2>Três camadas, uma página</h2>
+      <div class="grade">
+        <article class="cartao"><h3>HTML</h3><p>Estrutura: define o que existe na página.</p></article>
+        <article class="cartao"><h3>CSS</h3><p>Aparência: define como cada parte é exibida.</p></article>
+        <article class="cartao"><h3>JavaScript</h3><p>Comportamento: define o que acontece ao interagir.</p></article>
+      </div>
+    </section>
+
+    <section id="ao-vivo" class="container secao">
+      <p class="eyebrow">03 · Painel ao vivo</p>
+      <h2>Orientações geradas nesta visita</h2>
+      <div class="cartao">
+        <p class="total"><strong id="total">0</strong> orientações · dados desta sessão</p>
+        <div class="barras">
+          <div class="barra"><span>HTML</span><div class="barra__fundo"><div id="barra-html" class="barra__preench"></div></div><b id="cont-html">0</b></div>
+          <div class="barra"><span>CSS</span><div class="barra__fundo"><div id="barra-css" class="barra__preench"></div></div><b id="cont-css">0</b></div>
+          <div class="barra"><span>JavaScript</span><div class="barra__fundo"><div id="barra-javascript" class="barra__preench"></div></div><b id="cont-javascript">0</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container secao">
+      <p class="eyebrow">04 · Perguntas frequentes</p>
+      <h2>Antes de começar</h2>
+      <details class="cartao"><summary>Preciso pagar por algum curso?</summary><p>Não. Todos os links sugeridos são de conteúdo gratuito.</p></details>
+      <details class="cartao"><summary>Qual área devo estudar primeiro?</summary><p>A ordem mais comum é HTML, depois CSS e por fim JavaScript.</p></details>
+      <details class="cartao"><summary>Meus dados são enviados para algum lugar?</summary><p>Não. Tudo acontece no seu navegador.</p></details>
+      <details class="cartao"><summary>Preciso saber inglês?</summary><p>Ajuda, mas há opções em português em cada área.</p></details>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container"><p>Projeto 3 – Desenvolvimento Front-End para Web</p></div>
+  </footer>
+
+</body>
+</html>
